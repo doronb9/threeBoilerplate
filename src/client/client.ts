@@ -12,7 +12,8 @@ document.body.appendChild(renderer.domElement)
 
 const controls = new OrbitControls(camera, renderer.domElement)
 
-const geometry = new THREE.BoxGeometry()
+// const geometry = new THREE.BoxGeometry();
+const geometry = createGeometry()
 const material = new THREE.MeshBasicMaterial({
     color: 0x00ff00,
     wireframe: true,
@@ -28,6 +29,11 @@ function onWindowResize() {
     renderer.setSize(window.innerWidth, window.innerHeight)
     render()
 }
+
+// const createGeometry = (innerRadius = 0.4, outerRadius = 0.8, points = 5) => {
+//     const shape = new THREE.Shape();
+//     const
+// }
 
 function animate() {
     requestAnimationFrame(animate)
