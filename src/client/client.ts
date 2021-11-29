@@ -30,10 +30,10 @@ function onWindowResize() {
     render()
 }
 
-// const createGeometry = (innerRadius = 0.4, outerRadius = 0.8, points = 5) => {
+// `const createGeometry = (innerRadius = 0.4, outerRadius = 0.8, points = 5) => {
 //     const shape = new THREE.Shape();
 //     const
-// }
+// }`
 
 function animate() {
     requestAnimationFrame(animate)
